@@ -2,11 +2,12 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="main.css">
+		<script src="main.js"></script>	
 	</head>
 	<body>
-		<div class="header"> 
+		<header> 
 			<h1>Cowgirl's Dream</h1>
-		</div>
+		</header>
 		<div class="tagline"> 
 		<h2>For the <i>love</i>, <i>enjoyment</i> and <i>appreciation</i> of horses.</h2> 
 		</div>
@@ -45,10 +46,16 @@
 			</ul>
 			
 		</div>
-		<div class="footer"> 
-			<p><a href="mailto:dezmcardle@yahoo.com">Click here to tell me about one of your favorite places to ride.</a>
-			</p>
-		</div>
+		<div class="lookup">
+		 <ul>
+		<li>
+			Input the State where you want to find a ranch.
+			<input id="state" type="search" name="ranch-search"/>
+		</li>
+		<li>  <button onclick="GetRanch();">Find It</button>
+		</li>
+  </ul>
+		
 	</body>
 
 </html>
